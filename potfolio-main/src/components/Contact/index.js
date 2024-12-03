@@ -131,7 +131,7 @@ const Contact = () => {
       subject: formData.get('subject'),
       message: formData.get('message'),
     };
-    axios.post('http://localhost:5000/send', data)
+    axios.post('https://portfolio-seven-flax-76.vercel.app/send', data)
       .then((response) => {
         setOpen(true);
         form.current.reset();
